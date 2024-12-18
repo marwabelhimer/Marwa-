@@ -1,24 +1,20 @@
+//
+//  HomeView.swift
+//  marwa-
+//
+//  Created by Marwa Belhimer on 18/12/24.
+//
+
+//
+//  HomeView.swift
+//  WingSpan
+//
+//  Created by Marwa Belhimer on 18/12/24.
+//
+
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        TabView {
-            HomeView()
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
-                }
-
-            FavoritesView()
-                .tabItem {
-                    Image(systemName: "heart.fill")
-                    Text("Preferiti")
-                }
-        }
-    
-    }
-}
-
+struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack {
@@ -88,10 +84,10 @@ struct ContentView: View {
             .shadow(radius: 5)
         }
     }
+}
 
-
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }
